@@ -30,7 +30,7 @@
         <div class="broker-logo">Ex</div>
 
         <div class="hero-content">
-          <h1>Exness Review 2025</h1>
+          <h1>Exness Review 2026</h1>
           <p class="hero-subtitle">Discover the advanced trading experience</p>
 
           <div class="rating-row">
@@ -39,7 +39,7 @@
             <div class="score-label">Overall Rating</div>
           </div>
 
-          <a href="https://www.extrading.asia/vi/?utm_source=partners&ex_ol=1" class="btn-primary">Open Account <span>→</span></a>
+          <a href="https://one.exnessonelink.com/a/0md080tv6a" class="btn-primary">Open Account <span>→</span></a>
         </div>
       </div>
     </section>
@@ -183,34 +183,98 @@
               </div>
             </div>
           </article>
+             <!-- CONCLUSION -->
+<section class="card conclusion-card">
+  <h2>Conclusion</h2>
+  <p>
+    Exness is a reliable and innovative broker that offers a comprehensive
+    trading experience. With competitive spreads, multiple account types, and
+    robust regulation, it's a strong choice for traders at all levels.
+  </p>
+  <p>
+    The platform's emphasis on security, transparency, and user experience
+    makes it one of the most trusted brokers in the industry.
+  </p>
 
-          <article class="card" id="faq">
-            <h2>Frequently Asked Questions</h2>
+  <div class="cta-box">
+    <p>Start trading with one of the most trusted brokers</p>
+    <a href="https://one.exnessonelink.com/a/0md080tv6a" class="btn-primary" target="_blank" rel="noopener noreferrer">
+      Open Account <span>→</span>
+    </a>
+  </div>
+</section>
 
-            <div class="faq-item">
-              <h4>Is Exness good for beginners?</h4>
-              <p>
-                It can be, especially if you present its simple setup and low
-                deposit entry as advantages.
-              </p>
-            </div>
+<!-- FAQ -->
+<section class="card faq-card" id="faq">
+  <h2>Frequently Asked Questions</h2>
 
-            <div class="faq-item">
-              <h4>Does Exness support MT4 and MT5?</h4>
-              <p>
-                Yes, this section can be used to describe platform availability
-                across desktop, mobile, and web.
-              </p>
-            </div>
+  <div class="faq-list">
+    <div class="faq-item active">
+      <button class="faq-question" type="button">
+        <span>Is Exness safe to trade with?</span>
+        <span class="faq-icon">⌃</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes, Exness is regulated by multiple authorities including CySEC, FCA,
+          and FSA. Client funds are kept in segregated accounts.
+        </p>
+      </div>
+    </div>
 
-            <div class="faq-item">
-              <h4>What is the minimum deposit?</h4>
-              <p>
-                Put the exact figure here based on the account type you want to
-                show on your final page.
-              </p>
-            </div>
-          </article>
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>What is the minimum deposit?</span>
+        <span class="faq-icon">⌃</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          The minimum deposit starts from $10 USD, depending on the account type
+          and payment method.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>Does Exness charge withdrawal fees?</span>
+        <span class="faq-icon">⌃</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          No, Exness does not charge any withdrawal fees. However, your payment
+          provider may apply their own charges.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>What platforms does Exness offer?</span>
+        <span class="faq-icon">⌃</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Exness offers MT4, MT5, Exness Terminal (web-based), and the Exness
+          Trade mobile app.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>Does Exness offer demo accounts?</span>
+        <span class="faq-icon">⌃</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes, Exness provides free demo accounts for practice trading with
+          virtual funds.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
         </div>
 
         <aside class="sidebar">
@@ -218,7 +282,7 @@
             <h3>Broker Score</h3>
             <div class="side-score">4.5</div>
             <p>Strong overall value for active and casual traders.</p>
-            <a href="#" class="btn-primary btn-full">Open Account</a>
+            <a href="https://one.exnessonelink.com/a/0md080tv6a" class="btn-primary btn-full">Open Account</a>
           </div>
 
           <div class="sidebar-card">
@@ -234,5 +298,24 @@
       </div>
     </section>
   </main>
+  <script>
+  const faqItems = document.querySelectorAll(".faq-card .faq-item");
+
+  faqItems.forEach((item) => {
+    const button = item.querySelector(".faq-question");
+
+    if (!button) return;
+
+    button.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      faqItems.forEach((faq) => faq.classList.remove("active"));
+
+      if (!isActive) {
+        item.classList.add("active");
+      }
+    });
+  });
+</script>
 </body>
 </html>
