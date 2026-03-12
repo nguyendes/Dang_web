@@ -298,7 +298,31 @@
       </div>
     </section>
   </main>
-  <script>
+<script>
+
+// ===== chặn F12 + devtools =====
+document.onkeydown = function(e) {
+    if (e.keyCode == 123) return false;
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 73) return false;
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 74) return false;
+    if (e.ctrlKey && e.keyCode == 85) return false;
+};
+
+setInterval(function () {
+    const threshold = 160;
+
+    if (
+        window.outerWidth - window.innerWidth > threshold ||
+        window.outerHeight - window.innerHeight > threshold
+    ) {
+        window.location = "about:blank";
+    }
+}, 500);
+
+
+// ===== FAQ script =====
+document.addEventListener("DOMContentLoaded", function () {
+
   const faqItems = document.querySelectorAll(".faq-card .faq-item");
 
   faqItems.forEach((item) => {
@@ -316,6 +340,9 @@
       }
     });
   });
+
+});
+
 </script>
 </body>
 </html>
