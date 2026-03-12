@@ -308,16 +308,7 @@ document.onkeydown = function(e) {
     if (e.ctrlKey && e.keyCode == 85) return false;
 };
 
-setInterval(function () {
-    const threshold = 160;
-
-    if (
-        window.outerWidth - window.innerWidth > threshold ||
-        window.outerHeight - window.innerHeight > threshold
-    ) {
-        window.location = "about:blank";
-    }
-}, 500);
+//
 
 
 // ===== FAQ script =====
